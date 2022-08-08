@@ -1,4 +1,4 @@
-# Install script for directory: /home/rares/Desktop/new
+# Install script for directory: /home/rares/Desktop/FileTransfer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rares/Desktop/new/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rares/Desktop/FileTransfer/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
