@@ -31,4 +31,7 @@ target_include_directories(main PRIVATE ${/home/rares/Desktop/workspace/dlt-daem
 
 message(STATUS "${DLT_INCLUDE_DIRS} ${DLT_LIBRARIES}")  
 
+#file(READ <filename> <variable>
+ #    [OFFSET <offset>] [LIMIT <max-in>]
+
 

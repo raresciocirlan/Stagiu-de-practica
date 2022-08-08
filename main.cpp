@@ -1,7 +1,8 @@
+#include <iostream>
 #include <stdio.h>      /* for printf() and fprintf() */
 #include <stdlib.h>      
 
-#include <dlt/dlt.h>
+/*#include <dlt/dlt.h>
 
 #define DLT_INT32(INT_VAR)(void)dlt_user_log_write_int32(&log_local,INT_VAR)
 
@@ -12,23 +13,28 @@
 
  
 
-DLT_DECLARE_CONTEXT(con_example1);
+DLT_DECLARE_CONTEXT(con_example1);*/
 
 
 int main()
 {
-    DLT_REGISTER_APP("Exemplu", "Primul exemplu");
-    DLT_REGISTER_CONTEXT(con_example1, "CON", "First context");
+    /*DLT_REGISTER_APP("Exemplu", "Primul exemplu");
+    DLT_REGISTER_CONTEXT(con_example1, "CON", "First context");*/
 
-int i,n;
+    char buff[10];
+    FILE *fin = fopen("file.txt","rb");
+    size_t readlen = fread( buff, 1, sizeof(buff), fin );
+
+
+/*int i,n;
  
 for (i=0;i<=9;i++)
 {
 DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message nr "),DLT_INT32(i));
 }
+*/
 
 
-
-   DLT_UNREGISTER_CONTEXT(con_example1);
-    DLT_UNREGISTER_APP();
+   /*DLT_UNREGISTER_CONTEXT(con_example1);
+    DLT_UNREGISTER_APP();*/
 }
